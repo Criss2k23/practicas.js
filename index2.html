@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Resultado"></div>
+    <script>
+    var a = prompt("Ingrese la primera nota");  
+    var b = prompt("Ingrese la segunda nota");
+    var c = prompt("Ingrese la tercera nota");  
+    var d = prompt("Ingrese la cuarta nota"); 
+    var N = 4
+
+    numero1 = parseInt(a)
+    numero2 = parseInt(b)
+    numero3 = parseInt(c)
+    numero4 = parseInt(d)
+
+    var suma = (numero1 + numero2 + numero3 + numero4)/N; 
+    document.getElementById("Resultado").innerHTML="Promedio :" + suma;
+
+    if(suma > 11) {
+    document.write("Tu promedio es " + suma + " aprobaste")
+    }
+
+    else {
+    document.write("Tu promedio es " + suma + " No aprobaste")
+    }   
+    </script>
+    
+
+
+
+</body>
+</html>
